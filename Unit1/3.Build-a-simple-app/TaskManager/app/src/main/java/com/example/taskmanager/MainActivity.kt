@@ -4,10 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -43,10 +40,10 @@ class MainActivity : ComponentActivity() {
 fun DisplayTask(status: String, message: String, modifier: Modifier = Modifier) {
     val image = painterResource(R.drawable.ic_task_completed)
     Column( modifier = Modifier
-        .wrapContentSize(
-            Alignment.Center,
-        )
-
+        .fillMaxWidth()
+        .fillMaxHeight(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
 
     ) {
         Image(painter = image, contentDescription = null)
@@ -55,15 +52,12 @@ fun DisplayTask(status: String, message: String, modifier: Modifier = Modifier) 
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold,
             modifier = Modifier
-                .align(Alignment.CenterHorizontally)
                 .padding(top = 24.dp, bottom = 8.dp)
         )
         Text(
             text = message,
             fontSize = 16.sp,
             textAlign = TextAlign.Center,
-            modifier = Modifier
-                .align(Alignment.CenterHorizontally)
         )
     }
 }
