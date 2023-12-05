@@ -30,7 +30,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    GreetingImage(message = "Happy Idul Adha Ahmed!", from ="From Jim")
+                    GreetingImage(message = getString(R.string.happy_idul_adha_text), from = getString(
+                                            R.string.signature_text))
                 }
             }
         }
@@ -54,7 +55,7 @@ fun GreetingText( message: String, from: String, modifier: Modifier = Modifier){
             fontSize = 36.sp,
             modifier = Modifier
                 .padding(16.dp)
-                .align(alignment = Alignment.End)
+                .align(alignment = Alignment.CenterHorizontally)
         )
 
     }

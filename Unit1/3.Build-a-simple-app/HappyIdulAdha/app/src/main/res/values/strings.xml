@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Happy Idul Adha</string>
+    <string name="happy_idul_adha_text">Happy Idul Adha Ahmed!</string>
+    <string name="signature_text">From Jim</string>
 </resources>
