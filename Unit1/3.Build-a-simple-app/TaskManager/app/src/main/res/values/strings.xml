@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="status_text">All tasks complete</string>
+    <string name="message_text">Nice Work!</string>
+</resources>
