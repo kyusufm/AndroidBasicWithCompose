@@ -87,7 +87,7 @@ fun ContactInformation(phone: String, social: String, mail: String, modifier: Mo
         horizontalAlignment = Alignment.CenterHorizontally,
 
         ) {
-        Row {
+        Row (){
             Icon(imageVector = phoneIcon, contentDescription = null, Modifier.padding(end = 10.dp))
             Text(phone)
         }
