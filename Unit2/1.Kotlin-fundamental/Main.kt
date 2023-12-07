@@ -114,7 +114,7 @@ fun main() {
 
     favActorSeven = null
     if (favActorSeven != null){
-        println("jumlah: "+ favActorSeven.length)
+        println("jumlah: " + favActorSeven.length)
     } else {
         println("null ndak ada actor name")
     }
