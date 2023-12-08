@@ -6,4 +6,5 @@ class SmartDevice(){
 
 fun main() {
     println ("test2")
+
 }
