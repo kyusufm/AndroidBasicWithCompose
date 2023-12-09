@@ -1,12 +1,9 @@
 fun main(){
-    val coins: (Int) -> String = { quantity ->
-        "$quantity quarters"
-    }
-
-    val treatFunction = TrickOrTreat(false, coins)
+    val treatFunction = TrickOrTreat(false) {"$it quarters2s"}
     val trickFunction = TrickOrTreat(true, null)
-    
-    treatFunction()
+    repeat (4){
+        treatFunction()
+    }
     trickFunction()
 
 }
