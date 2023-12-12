@@ -56,8 +56,8 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier){
     }
     Column (
         modifier = modifier,
-        horizontalAlignment = Alignment.End,
-        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center,
     ){
         Image(painter = painterResource(imageResource) , contentDescription = result.toString() )
         Spacer(modifier = Modifier.height(16.dp))
