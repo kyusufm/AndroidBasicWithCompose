@@ -25,7 +25,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             DiceRollerTheme {
                 // A surface container using the 'background' color from the them
-                DiceWithButtonAndImage()
+                DiceWithButtonAndImage(modifier = Modifier
+                    .fillMaxSize()
+                    .wrapContentSize(Alignment.Center)
+                )
             }
         }
     }
